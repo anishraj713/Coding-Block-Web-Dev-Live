@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -191,4 +192,199 @@ footer i{
     margin-top: 10px;
     font-size: 25px;
 }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+/* Navbar css Start Here */
+nav{
+    margin: 10px auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    font-size: 1.2rem;
+    width: 88vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+nav a{
+    padding-top: 10px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 380px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width:500px){
+    nav,nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Navbar css Ends Here */
+
+/* Slider Start Here */
+#slider{
+    width: 90vw;
+    height: 80vh;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    margin: 10px auto;
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+@keyframes slide{
+    0%{
+        background-image: url("https://images.unsplash.com/photo-1627044185459-09e6dbc39444?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-size:cover;
+    }
+    25%{
+        background-image: url("https://images.unsplash.com/photo-1571188654248-7a89213915f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-size:cover;
+    }
+    75%{
+        background-image: url("https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-size:cover;
+    }
+    100%{
+        background-image: url("https://images.unsplash.com/photo-1497515098781-e965764ab601?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80");
+        background-size:cover ;
+    }
+}
+/* Slider Ends Here */
+
+/* Our Product Css Start Here */
+#op{
+    padding-top: 5px;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+}
+#Product_list{
+    width: 90vw;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 320px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    transition: 300ms;
+
+}
+.product img{
+    width: 100%;
+}
+.product:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+.product h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Our Product Css Ends Here */
+
+/* Contact Us Start Here */
+#Contact_Us h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+}
+form{
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    background-color: black;
+    color:white;
+    width: 90vw;
+    height: fit-content;
+    margin: 10px auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    /* position: relative; */
+}
+#l_form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 15px;
+}
+#l_form i{
+    font-size: 15rem;
+    /* margin-top: -35px; */
+}
+#l_form h4{
+font-size: 2rem;
+}
+#r_form{
+    display: flex;
+    width: 50vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+input ,textarea{
+    width: 20vw;
+    padding: 8px;
+    border:0px;
+    margin-top: 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+button{
+    border-style: none;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    /* margin-top: 1px; */
+    /* margin-bottom: 15px; */
+    /* position: absolute; */
+
+}
+
+/* Contact Us Ends Here */
+
+/* Footers Start Here */
+footer{
+    width: 90vw;
+    height: 8vh;
+    margin: 10px auto;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    
+}
+footer h3{
+    margin-bottom: 10px;
+}
+footer i{
+    margin-top: 10px;
+    font-size: 25px;
+}
+>>>>>>> acd987b64f45af075dc4942884462259d008f664
 /* Footers Ends Here */
