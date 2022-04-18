@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    font-size: 1.8rem;
+    display: flex;
+}
+
+
+nav a{
+text-decoration: none;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+}
